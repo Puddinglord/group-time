@@ -1,0 +1,5 @@
+# So we don't give away anything important
+config.json
+
+# Don't want to upload the node modules either
+node_modules/

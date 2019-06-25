@@ -1,0 +1,23 @@
+{
+  "name": "group-time",
+  "version": "1.0.0",
+  "description": "Made for when a group of people want to get work done in a specified amount of time. Made for game jams and other group related projects where getting work done in a short amount of time can really make the difference between success and failure.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puddinglord/group-time.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Puddinglord/group-time/issues"
+  },
+  "homepage": "https://github.com/Puddinglord/group-time#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}

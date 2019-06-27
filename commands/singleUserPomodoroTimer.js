@@ -29,14 +29,14 @@ module.exports = {
 									message.reply(workMessage);
 									setTimeout(() => {
 										message.reply(longBreakMessage);
-										message.reply('Congraduations! You\'ve compeleted a pomodoro session :party: If you want to start another just let me know.');
+										message.reply('Congraduations! You\'ve compeleted a pomodoro session :confetti_ball: If you want to start another just let me know.');
 									}, longBreakDuration);
 								}, workDuration);
 							}, shortBreakDuration);
 						}, workDuration);
 					}, shortBreakDuration);
 				}, workDuration);
-			}, 5000);
-		}, 25000);
+			}, shortBreakDuration);
+		}, workDuration);
 	},
 };

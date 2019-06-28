@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'pomodoro',
-	description: 'A stadndard pomodoro timer for a single user. Uses the standard 25 minute work and 5 minute break timers. Four work sessions gets you a 15 minute break.',
+	description: 'A standard pomodoro timer for a single user. Uses the standard 25 minute work and 5 minute break timers. Four work sessions gets you a 15 minute break. You can also customize the session times by using extra arguments. Find out more by saying `!help pomodoro`',
+	usage: '*All durations in minutes: Work Duration, Short Break Duration, Long Break Duration.* Example: `!pomodoro 10 5 7` *would be a work duration of 10 minutes, a short break duration of 5 minutes and a long break duration of 7 minutes.*',
 	workDuration: 1500000,
 	shortBreakDuration: 300000,
 	longBreakDuration: 900000,
@@ -28,7 +29,6 @@ module.exports = {
 		this.pomomodoSession(message);
 	},
 	pomomodoSession(message) {
-		console.log(this.sessionCount);
 		if(this.sessionCount < 4) {
 			setTimeout(() => {
 				message.reply(this.workMessage);
